@@ -1,5 +1,6 @@
 'use strict';
 
+
 /**
  * 攻撃力が防御力や防御力貫通によってどのようなダメージになるのかを計算する関数
  * 
@@ -20,6 +21,7 @@ functino effectiveDamage(power, armor, armorPenetration) {
   const damageDecrease = effectiveArmor / (100 + effectiveArmor);
   return Math.round(normalize(power) * (1 - damageDecrease));
 }
+
 
 /**
  * 異常な可能性のある入力値を正常値にする
